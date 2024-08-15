@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="headingone">Hotel Categories</h1>
+        <div class="imgs">
+            <div class="img-one"></div>
+            <div class="img-two"></div>
+            <div class="img-three"></div>
+        </div>
+
+        <div class="box-two">
+            <div class="content">
+                <h1> Tour Guides </h1>
+                <p>Vivamus ornare sit amet sapien quis pharetra.<br> Donec non sem enim. Nulla facilisi. Morbi<br> odio turpis.</p>
+                <button class="btn">See More</button>  
+
+                <div class="img-four"></div>
+                <div class="img-five"></div>
+                <div class="img-six"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="box-three">
+            <div class="contnt">
+            <h3>Schedule</h3>
+            <h1>Tour De Crprus</h1>
+            <p>Aenean sit amet finibus ligula, et posuere<br> urna. Sed ut bibendum arcu. Nulla pretium<br> turpis luctus elit luctus rhoncus. Nulla dictum<br> velit ac ante consectetur imperdiet. Integer<br> bibendum nunc vel mollis semper. Curabitur<br> scelerisque nibh quis viverra.</p>
+            </div>
+            <div class="date">
+                <div class="date-one">20.10.   to   24.10.24</div>
+                <div class="date-two">20.10.   to   24.10.24</div>
+                <div class="date-three">20.10.   to   24.10.24</div>
+            </div>
+
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Day 1 : Larnaca - Rizokarpaso, 115km / 700hm</div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipis</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Day 2 :  Rizokarpaso - Karavas 125 / 1000hm</div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipis</p>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Day 3 : Karavas - Pyrgos 121km / 1500hm</div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipis</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Day 4 : Polis Chrysochous - Limassol 110km / 1400hm</div>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipis</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header"> Day 5 :  Larnaca - Rizokarpaso, 115km / 700hm </div>
+                    <div class="accordion-content">
+                        <p> Lorem ipsum dolor sit, amet consectetur adipis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-four"> 
+            <h> Bikes </h>
+            <div class="boxes">
+                <div class="boxone">Standard Bike</div>
+                <div class="boxtwo">Mountain Bike</div>
+                <div class="boxthree">Road Bike</div>
+                <div class="boxfour">E-Bike</div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <script>
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+    
+               
+                accordionItem.classList.toggle('active');
+    
+               
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    if (item !== accordionItem) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
